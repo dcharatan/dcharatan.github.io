@@ -17,12 +17,7 @@ const Research = () => {
       />
     )
   );
-  return (
-    <Page>
-      <h1>Publications</h1>
-      {publicationNodes}
-    </Page>
-  );
+  return <Page title="Publications">{publicationNodes}</Page>;
 };
 
 export default Research;

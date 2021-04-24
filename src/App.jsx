@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Header from './features/header/Header';
 import Research from './features/pages/Research';
+import Resume from './features/pages/Resume';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <HashRouter>
         <Header />
         <Route exact path="/research" component={Research} />
+        <Route exact path="/resume" component={Resume} />
       </HashRouter>
     </div>
   );
