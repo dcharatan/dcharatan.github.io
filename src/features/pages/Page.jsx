@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Page = ({ title, subtitle, invisible, children }) => (
-  <Container>
+  <Container className="min-height-page">
     <Row>
       <Col>
         <div className="my-5">
