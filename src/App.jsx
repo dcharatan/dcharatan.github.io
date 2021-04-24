@@ -1,12 +1,15 @@
 import React from 'react';
+import { HashRouter, Route } from 'react-router-dom';
 import Header from './features/header/Header';
 import Research from './features/pages/Research';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Research />
+      <HashRouter>
+        <Header />
+        <Route exact path="/research" component={Research} />
+      </HashRouter>
     </div>
   );
 }
