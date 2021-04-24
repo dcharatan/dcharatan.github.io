@@ -22,7 +22,7 @@ const Resume = () => (
         notes="with honors"
       />
     </ResumeSection>
-    <ResumeSection name="Experience">
+    <ResumeSection name="Work Experience">
       <WorkExperience
         company="Common Sense Machines"
         location="Cambridge, MA"
@@ -61,6 +61,38 @@ const Resume = () => (
         bullets={[
           'Built C#-based SolidWorks add-in to generate parametric 3D models from two proprietary laser scan file types, saving technical animators several hours per model.',
           'Automated defeaturing and recoloring of 3D engineering models for animation.',
+        ]}
+      />
+    </ResumeSection>
+    <ResumeSection name="TA Positions">
+      <WorkExperience
+        company="CSCI 2240: Interactive Computer Graphics"
+        location="Brown University"
+        position="Head Teaching Assistant"
+        dates="January 2021–May 2021"
+        bullets={[
+          'Helped students debug C++ projects (path tracer, half-edge mesh operations, soft body simulation) during biweekly office hours and answered student questions via Slack.',
+          'Led grading for the graduate-level course.',
+        ]}
+      />
+      <WorkExperience
+        company="CSCI 1670/1690: Operating Systems in Depth"
+        location="Brown University"
+        position="Undergraduate Teaching Assistant"
+        dates="January 2020–May 2020"
+        bullets={[
+          'Held biweekly office hours; helped students debug C projects (implementations of threading/processes, virtual file system, S5 file system, terminal drivers, and virtual memory).',
+          'Served as mentor TA for several students completing the extended lab portion of the course.',
+        ]}
+      />
+      <WorkExperience
+        company="CSCI 0330: Introduction to Computer Systems"
+        location="Brown University"
+        position="Undergraduate Teaching Assistant"
+        dates="September 2019–December 2019"
+        bullets={[
+          'Held biweekly office hours; helped students debug projects (simple shell, malloc implementation, etc.).',
+          'Graded student assignments written in C.',
         ]}
       />
     </ResumeSection>
