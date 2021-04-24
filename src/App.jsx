@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
+import Footer from './features/footer/Footer';
 import Header from './features/header/Header';
 import Projects from './features/pages/Projects';
 import Research from './features/pages/Research';
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/research" component={Research} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/resume" component={Resume} />
+        <Footer />
       </HashRouter>
     </div>
   );
