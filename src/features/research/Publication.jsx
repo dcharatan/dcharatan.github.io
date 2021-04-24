@@ -12,7 +12,7 @@ const Publication = ({
 }) => {
   // Generate a comma-separated list of authors.
   const authorLinks = authors.map(({ name, url: authorUrl }) => (
-    <a href={authorUrl} className="link-secondary">
+    <a href={authorUrl} className="link-secondary" key={name}>
       {name}
     </a>
   ));

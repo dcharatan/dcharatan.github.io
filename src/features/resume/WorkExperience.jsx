@@ -10,7 +10,7 @@ const WorkExperience = ({ company, location, position, dates, bullets }) => (
     <div className="font-italic">{position}</div>
     <ul>
       {bullets.map((bullet) => (
-        <li>{bullet}</li>
+        <li key={bullet}>{bullet}</li>
       ))}
     </ul>
   </div>

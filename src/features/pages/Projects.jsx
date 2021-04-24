@@ -23,7 +23,7 @@ const Projects = () => (
       columnClassName="projects-masonry-column"
     >
       {projects.map((project) => (
-        <ProjectCard project={project} />
+        <ProjectCard project={project} key={project.title} />
       ))}
     </Masonry>
   </Page>
