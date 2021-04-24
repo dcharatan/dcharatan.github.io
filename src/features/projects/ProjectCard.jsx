@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
     );
   }
   return (
-    <div className="p-2">
+    <div className="p-4">
       <div className="border bg-white">
         {thumbnail ? (
           <img
