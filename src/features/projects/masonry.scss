@@ -1,0 +1,13 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+.projects-masonry-grid {
+  display: flex;
+  margin-left: -0.5 * $spacer;
+  margin-right: -0.5 * $spacer;
+  padding-top: 0.5 * $spacer;
+  width: auto;
+}
+
+.projects-masonry-column {
+  background-clip: padding-box;
+}
