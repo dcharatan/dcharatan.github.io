@@ -13,20 +13,22 @@ import {
   VladimirKim,
   XianghaoXu,
 } from './authors';
+import ThumbnailShapeMOD from './thumbnail_shapemod.jpeg';
+import ThumbnailArticulations from './thumbnail_articulations.gif';
 
 export const ShapeMOD = {
   title: 'ShapeMOD: Macro Operation Discovery for 3D Shape Programs',
   url: 'https://rkjones4.github.io/shapeMOD.html',
-  thumbnailSource: 'https://dritchie.github.io/csci2240/img/david.png',
+  thumbnailSource: ThumbnailShapeMOD,
   authors: [KennyJones, DavidCharatan, PaulGuerrero, NiloyMitra, DanielRitchie],
-  venue: 'arXiv',
+  venue: 'arXiv 2021',
 };
 
 export const Articulations = {
   title:
     'Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections',
   url: 'http://visual.cs.brown.edu/projects/articulations-webpage/',
-  thumbnailSource: 'https://dritchie.github.io/csci2240/img/david.png',
+  thumbnailSource: ThumbnailArticulations,
   authors: [
     XianghaoXu,
     DavidCharatan,

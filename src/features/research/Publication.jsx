@@ -12,7 +12,9 @@ const Publication = ({
 }) => {
   // Generate a comma-separated list of authors.
   const authorLinks = authors.map(({ name, url: authorUrl }) => (
-    <a href={authorUrl}>{name}</a>
+    <a href={authorUrl} className="link-secondary">
+      {name}
+    </a>
   ));
   const authorBlob = [];
   authorLinks.forEach((authorLink, index) => {
@@ -30,7 +32,7 @@ const Publication = ({
         <img
           src={thumbnailSource}
           alt={`Thumbnail for ${title}`}
-          className="publication-image mr-3"
+          className="publication-image mr-3 border"
         />
         <div className="d-flex flex-column">
           <a href={url} className="publication-link">

@@ -74,7 +74,7 @@ const Resume = () => (
       <InformationPoint heading="Awards and Recognition">
         Association for Computer Professionals in Education (ACPE) Scholarship,
         Tau Beta Pi Membership, 2021 Brown CS Undergraduate Research Symposium
-        Winner (4 of 27 presenters chosen)
+        Winner (4 of 27 presenters chosen), 3rd Place at 2020 5C Hackathon
       </InformationPoint>
       <InformationPoint heading="Activities">
         Hack@Brown Design Team, Animator for SciToons at Brown, Brown FSAE

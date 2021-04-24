@@ -17,7 +17,20 @@ const Research = () => {
       />
     )
   );
-  return <Page title="Publications">{publicationNodes}</Page>;
+
+  const subtitle = (
+    <>
+      I conduct undergraduate research with{' '}
+      <a href="https://dritchie.github.io/csci2240/">Daniel Ritchie</a> at{' '}
+      <a href="https://visual.cs.brown.edu/">Brown Visual Computing.</a>
+    </>
+  );
+
+  return (
+    <Page title="Research" subtitle={subtitle}>
+      {publicationNodes}
+    </Page>
+  );
 };
 
 export default Research;
