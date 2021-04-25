@@ -6,7 +6,16 @@ const Footer = () => (
     <Container>
       <Row>
         <Col>
-          <div className="border-top py-4">© David Charatan</div>
+          <div className="border-top py-4">
+            <div>© David Charatan</div>
+            <div className="small text-muted">
+              This website&apos;s design is inspired by{' '}
+              <a href="https://mldangelo.com/">
+                Michael D&apos;Angelo&apos;s website
+              </a>
+              .
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
