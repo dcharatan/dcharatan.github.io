@@ -3,7 +3,7 @@
 .me {
   width: 20em;
   object-fit: scale-down;
-  border-radius: 50%;
+  border-radius: 2rem;
 }
 
 @include media-breakpoint-down(md) {
