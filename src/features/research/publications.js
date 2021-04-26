@@ -21,7 +21,7 @@ export const ShapeMOD = {
   url: 'https://rkjones4.github.io/shapeMOD.html',
   thumbnailSource: ThumbnailShapeMOD,
   authors: [KennyJones, DavidCharatan, PaulGuerrero, NiloyMitra, DanielRitchie],
-  venue: 'arXiv 2021',
+  venue: 'SIGGRAPH 2021',
 };
 
 export const Articulations = {
