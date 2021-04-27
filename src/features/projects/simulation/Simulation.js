@@ -7,4 +7,5 @@ export default {
   title,
   description,
   thumbnail: Thumbnail,
+  href: 'https://www.youtube.com/watch?v=sQXepdWgsjE',
 };

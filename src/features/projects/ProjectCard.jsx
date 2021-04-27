@@ -11,25 +11,32 @@ const ProjectCard = ({ project }) => {
       `Don't specify "href" and "to" at the same time for a ProjectCard!.`
     );
   }
-  return (
-    <div className="p-4">
-      <div className="border bg-white">
-        {thumbnail ? (
-          <img
-            src={thumbnail}
-            alt={`Thumbnail for ${title}`}
-            className="project-card-image"
-          />
-        ) : null}
-        <div className={`${thumbnail ? 'border-top' : ''} p-3`}>
-          <h2>{title}</h2>
-          <div className="project-card-description">
-            <ReactMarkdown>{description}</ReactMarkdown>
-          </div>
+  const padded = (content) => <div className="p-4">{content}</div>;
+  const content = (
+    <div className="border bg-white">
+      {thumbnail ? (
+        <img
+          src={thumbnail}
+          alt={`Thumbnail for ${title}`}
+          className="project-card-image"
+        />
+      ) : null}
+      <div className={`${thumbnail ? 'border-top' : ''} p-3`}>
+        <h2>{title}</h2>
+        <div className="project-card-description">
+          <ReactMarkdown>{description}</ReactMarkdown>
         </div>
       </div>
     </div>
   );
+  if (href !== undefined) {
+    return padded(
+      <a className="link-invisible" href={href}>
+        {content}
+      </a>
+    );
+  }
+  return padded(content);
 };
 
 ProjectCard.propTypes = {

@@ -4,4 +4,5 @@ const description = `An implementation of Feng et al.’s paper *6D Dynamic Came
 export default {
   title,
   description,
+  href: 'https://github.com/dcharatan/dcr-reimplementation',
 };

@@ -7,4 +7,5 @@ export default {
   title,
   description,
   thumbnail: Thumbnail,
+  href: 'https://github.com/dcharatan/point2mesh-reimplementation',
 };
