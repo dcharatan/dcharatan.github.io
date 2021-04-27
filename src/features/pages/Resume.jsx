@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import Degree from '../resume/Degree';
 import InformationPoint from '../resume/InformationPoint';
 import ResumeSection from '../resume/ResumeSection';
@@ -8,41 +7,16 @@ import WorkExperience from '../resume/WorkExperience';
 import Page from './Page';
 
 const Resume = () => {
-  // Generate the links at the top of the page.
-  const links = [
-    ['Education', 'education'],
-    ['Work Experience', 'work-experience'],
-    ['TA Positions', 'ta-positions'],
-    ['Additional Information', 'additional-information'],
-  ];
-  const linkNodes = [];
-  links.forEach(([text, id], index) => {
-    // Add the link.
-    linkNodes.push(
-      <HashLink to={`resume#${id}`} key={id} smooth>
-        {text}
-      </HashLink>
-    );
-
-    // Add a separator.
-    if (index !== links.length - 1) {
-      linkNodes.push(<span className="mx-3 text-secondary">|</span>);
-    }
-  });
-
   const subtitle = (
-    <div>
-      {linkNodes}
-      <div className="mt-2">
-        For research and projects, see <Link to="/research">research</Link> and{' '}
-        <Link to="/projects">projects</Link>.
-      </div>
+    <div className="mt-2">
+      For research and projects, see <Link to="/research">research</Link> and{' '}
+      <Link to="/projects">projects</Link>.
     </div>
   );
 
   return (
     <Page title="Resume" subtitle={subtitle}>
-      <ResumeSection name="Education" id="education">
+      <ResumeSection name="Education">
         <Degree
           name="M.S. Computer Science"
           university="Brown University (Providence, RI)"
@@ -56,7 +30,7 @@ const Resume = () => {
           notes="with honors"
         />
       </ResumeSection>
-      <ResumeSection name="Work Experience" id="work-experience">
+      <ResumeSection name="Work Experience">
         <WorkExperience
           company="Common Sense Machines"
           location="Cambridge, MA"
@@ -98,7 +72,7 @@ const Resume = () => {
           ]}
         />
       </ResumeSection>
-      <ResumeSection name="TA Positions" id="ta-positions">
+      <ResumeSection name="TA Positions">
         <WorkExperience
           company="CSCI 2240: Interactive Computer Graphics"
           location="Brown University"
@@ -130,11 +104,7 @@ const Resume = () => {
           ]}
         />
       </ResumeSection>
-      <ResumeSection
-        name="Additional Information"
-        last
-        id="additional-information"
-      >
+      <ResumeSection name="Additional Information" last>
         <InformationPoint heading="Awards and Recognition">
           Association for Computer Professionals in Education (ACPE)
           Scholarship, Tau Beta Pi Membership, 2021 Brown CS Undergraduate
