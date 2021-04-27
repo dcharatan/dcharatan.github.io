@@ -17,7 +17,7 @@ const Home = () => (
           science. Click the links below to learn more!
         </div>
         <div className="mt-2">
-          <Link to="/resume">Research</Link>
+          <Link to="/research">Research</Link>
           <span className="mx-3 text-secondary">|</span>
           <Link to="/projects">Projects</Link>
           <span className="mx-3 text-secondary">|</span>
