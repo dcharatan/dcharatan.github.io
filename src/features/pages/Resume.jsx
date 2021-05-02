@@ -27,7 +27,7 @@ const Resume = () => {
           name="Sc.B. Computer Engineering"
           university="Brown University (Providence, RI)"
           years="2017–2021"
-          notes="with honors"
+          notes="with honors, magna cum laude"
         />
       </ResumeSection>
       <ResumeSection name="Work Experience">
