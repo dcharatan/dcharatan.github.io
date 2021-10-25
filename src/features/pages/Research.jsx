@@ -20,7 +20,7 @@ const Research = () => {
 
   const subtitle = (
     <>
-      I conduct undergraduate research with{' '}
+      I&apos;ve conducted undergraduate research with{' '}
       <a href="https://dritchie.github.io/csci2240/">Daniel Ritchie</a> at{' '}
       <a href="https://visual.cs.brown.edu/">Brown Visual Computing.</a>
     </>
