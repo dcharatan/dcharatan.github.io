@@ -1,32 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.957e778b.chunk.css",
-    "main.js": "/static/js/main.ced078de.chunk.js",
-    "main.js.map": "/static/js/main.ced078de.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.99041298.js",
-    "runtime-main.js.map": "/static/js/runtime-main.99041298.js.map",
-    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.f0ec75ce.chunk.js": "/static/js/2.f0ec75ce.chunk.js",
-    "static/js/2.f0ec75ce.chunk.js.map": "/static/js/2.f0ec75ce.chunk.js.map",
+    "main.css": "/static/css/main.eefa54bc.css",
+    "main.js": "/static/js/main.06588e29.js",
+    "static/media/thumbnail.png": "/static/media/thumbnail.55d075ee22347ef41273.png",
+    "static/media/thumbnail_articulations.gif": "/static/media/thumbnail_articulations.2011eae41497b39c3205.gif",
+    "static/media/thumbnail_shapemod.jpeg": "/static/media/thumbnail_shapemod.b2c1e218b868ca126a58.jpeg",
+    "static/media/me.jpg": "/static/media/me.ca79c615153ee4131cc9.jpg",
+    "static/media/thumbnail.jpg": "/static/media/thumbnail.4b258beb8913ca338cd2.jpg",
     "index.html": "/index.html",
-    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.957e778b.chunk.css.map": "/static/css/main.957e778b.chunk.css.map",
-    "static/js/2.f0ec75ce.chunk.js.LICENSE.txt": "/static/js/2.f0ec75ce.chunk.js.LICENSE.txt",
-    "static/media/me.ca79c615.jpg": "/static/media/me.ca79c615.jpg",
-    "static/media/thumbnail.4b258beb.jpg": "/static/media/thumbnail.4b258beb.jpg",
-    "static/media/thumbnail.55d075ee.png": "/static/media/thumbnail.55d075ee.png",
-    "static/media/thumbnail.572cca4e.png": "/static/media/thumbnail.572cca4e.png",
-    "static/media/thumbnail.7bf8f227.png": "/static/media/thumbnail.7bf8f227.png",
-    "static/media/thumbnail.840f0a33.png": "/static/media/thumbnail.840f0a33.png",
-    "static/media/thumbnail.8a1ea0af.png": "/static/media/thumbnail.8a1ea0af.png",
-    "static/media/thumbnail_articulations.2011eae4.gif": "/static/media/thumbnail_articulations.2011eae4.gif",
-    "static/media/thumbnail_shapemod.b2c1e218.jpeg": "/static/media/thumbnail_shapemod.b2c1e218.jpeg"
+    "main.eefa54bc.css.map": "/static/css/main.eefa54bc.css.map",
+    "main.06588e29.js.map": "/static/js/main.06588e29.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.99041298.js",
-    "static/css/2.150d169a.chunk.css",
-    "static/js/2.f0ec75ce.chunk.js",
-    "static/css/main.957e778b.chunk.css",
-    "static/js/main.ced078de.chunk.js"
+    "static/css/main.eefa54bc.css",
+    "static/js/main.06588e29.js"
   ]
 }
