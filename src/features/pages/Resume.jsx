@@ -29,9 +29,10 @@ const Resume = () => {
           company="Common Sense Machines"
           location="Cambridge, MA"
           position="Research Engineer"
-          dates="Starting September 2021"
+          dates="September 2021–August 2022"
           bullets={[
-            'Developing technology related to 3D reconstruction and object understanding.',
+            'Developed technology related to 3D reconstruction and object understanding.',
+            'Worked on optimized neural scene representations using CUDA.'
           ]}
         />
         <WorkExperience
