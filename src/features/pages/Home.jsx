@@ -13,14 +13,14 @@ const Home = () => (
       <div className="p-4">
         <h1>David Charatan</h1>
         <div>
-          Hello! I&apos;m a research engineer at{' '}
-          <a href="https://csm.ai/">Common Sense Machines</a> and a former
-          undergraduate student at Brown University. I will be a PhD student at
-          the{' '}
+          Hello! I&apos;m a PhD student at MIT EECS in the{' '}
           <a href="https://www.scenerepresentations.org/">
-            Scene Representation Group at MIT EECS
-          </a>{' '}
-          starting in September 2022. Click the links below to learn more!
+            Scene Representation Group
+          </a>
+          . In the past, I was a research engineer at{' '}
+          <a href="https://csm.ai/">Common Sense Machines</a> and an
+          undergraduate student at Brown University. Click the links below to
+          learn more!
         </div>
         <div className="mt-2">
           <Link to="/research">Research</Link>
