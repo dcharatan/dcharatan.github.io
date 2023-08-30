@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkedinFilled, GithubFilled } from '@ant-design/icons';
 import Page from './Page';
@@ -8,6 +9,14 @@ import IconButton from '../home/IconButton';
 
 const Home = () => (
   <Page padding="p-4">
+    <div className="px-4 pt-4">
+      <Alert variant="danger">
+        Hi there! If you&apos;re the person who stole my stuff at Seattle
+        Bouldering Project on August 29, 2023 and have had a change of heart,
+        please reach out to me at david.charatan@gmail.com. I&apos;m sure we can
+        work something out.
+      </Alert>
+    </div>
     <div className="d-flex flex-row align-items-center justify-content-center home-breakpoint">
       <img src={Me} alt="Me" className="me p-4" />
       <div className="p-4">
