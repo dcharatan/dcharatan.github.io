@@ -12,9 +12,22 @@ import {
   SoniaRaychaudhuri,
   VladimirKim,
   XianghaoXu,
+  VincentSitzmann,
+  AndreaTagliasacchi,
+  SizheLi,
 } from './authors';
+import ThumbnailPixelSplat from './thumbnail_pixelsplat.png';
 import ThumbnailShapeMOD from './thumbnail_shapemod.jpeg';
 import ThumbnailArticulations from './thumbnail_articulations.gif';
+
+export const PixelSplat = {
+  title:
+    'pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction',
+  url: 'https://pixelsplat.github.io/',
+  thumbnailSource: ThumbnailPixelSplat,
+  authors: [DavidCharatan, SizheLi, AndreaTagliasacchi, VincentSitzmann],
+  venue: 'arXiv',
+};
 
 export const ShapeMOD = {
   title: 'ShapeMOD: Macro Operation Discovery for 3D Shape Programs',
@@ -44,4 +57,4 @@ export const Articulations = {
   venue: '3DV 2020',
 };
 
-export default [ShapeMOD, Articulations];
+export default [PixelSplat, ShapeMOD, Articulations];

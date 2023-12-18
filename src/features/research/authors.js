@@ -62,3 +62,18 @@ export const AngelChang = {
   name: 'Angel X. Chang',
   url: 'https://angelxuanchang.github.io/',
 };
+
+export const SizheLi = {
+  name: 'Sizhe Li',
+  url: 'https://sizhe-li.github.io/',
+};
+
+export const AndreaTagliasacchi = {
+  name: 'Andrea Tagliasacchi',
+  url: 'https://taiya.github.io/',
+};
+
+export const VincentSitzmann = {
+  name: 'Vincent Sitzmann',
+  url: 'https://www.vincentsitzmann.com/',
+};

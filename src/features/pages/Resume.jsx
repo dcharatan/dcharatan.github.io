@@ -18,6 +18,12 @@ const Resume = () => {
     <Page title="Resume" subtitle={subtitle}>
       <ResumeSection name="Education">
         <Degree
+          name="Ph.D. Computer Science"
+          university="Massachusetts Institute of Technology (Cambridge, MA)"
+          years="2022–"
+          className="mb-2"
+        />
+        <Degree
           name="Sc.B. Computer Engineering"
           university="Brown University (Providence, RI)"
           years="2017–2021"
@@ -32,7 +38,7 @@ const Resume = () => {
           dates="September 2021–August 2022"
           bullets={[
             'Developed technology related to 3D reconstruction and object understanding.',
-            'Worked on optimized neural scene representations using CUDA.'
+            'Worked on optimized neural scene representations using CUDA.',
           ]}
         />
         <WorkExperience

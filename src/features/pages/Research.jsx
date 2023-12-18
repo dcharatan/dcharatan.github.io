@@ -22,7 +22,13 @@ const Research = () => {
     <>
       I&apos;ve conducted undergraduate research with{' '}
       <a href="https://dritchie.github.io/csci2240/">Daniel Ritchie</a> at{' '}
-      <a href="https://visual.cs.brown.edu/">Brown Visual Computing.</a>
+      <a href="https://visual.cs.brown.edu/">Brown Visual Computing.</a>{' '}
+      I&apos;m now a Ph.D. student in the{' '}
+      <a href="https://www.scenerepresentations.org/">
+        Scene Representation Group
+      </a>{' '}
+      run by <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a> at
+      MIT.
     </>
   );
 
