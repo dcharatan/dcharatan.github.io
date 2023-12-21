@@ -23,7 +23,7 @@ import ThumbnailArticulations from './thumbnail_articulations.gif';
 export const PixelSplat = {
   title:
     'pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction',
-  url: 'https://pixelsplat.github.io/',
+  url: 'https://dcharatan.github.io/pixelsplat',
   thumbnailSource: ThumbnailPixelSplat,
   authors: [DavidCharatan, SizheLi, AndreaTagliasacchi, VincentSitzmann],
   venue: 'arXiv',
