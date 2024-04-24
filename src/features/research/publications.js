@@ -15,10 +15,23 @@ import {
   VincentSitzmann,
   AndreaTagliasacchi,
   SizheLi,
+  CameronSmith,
+  AyushTewari,
 } from './authors';
 import ThumbnailPixelSplat from './thumbnail_pixelsplat.png';
 import ThumbnailShapeMOD from './thumbnail_shapemod.jpeg';
 import ThumbnailArticulations from './thumbnail_articulations.gif';
+import ThumbnailFlowmap from './thumbnail_flowmap.gif';
+
+export const FlowMap = {
+  title:
+    'FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent',
+  url: 'http://cameronosmith.github.io/flowmap',
+  thumbnailSource: ThumbnailFlowmap,
+  authors: [CameronSmith, DavidCharatan, AyushTewari, VincentSitzmann],
+  numFirstAuthors: 2,
+  venue: 'arXiv',
+};
 
 export const PixelSplat = {
   title:
@@ -26,7 +39,7 @@ export const PixelSplat = {
   url: 'https://dcharatan.github.io/pixelsplat',
   thumbnailSource: ThumbnailPixelSplat,
   authors: [DavidCharatan, SizheLi, AndreaTagliasacchi, VincentSitzmann],
-  venue: 'arXiv',
+  venue: 'CVPR 2024 (Oral)',
 };
 
 export const ShapeMOD = {
@@ -57,4 +70,4 @@ export const Articulations = {
   venue: '3DV 2020',
 };
 
-export default [PixelSplat, ShapeMOD, Articulations];
+export default [FlowMap, PixelSplat, ShapeMOD, Articulations];

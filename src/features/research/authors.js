@@ -77,3 +77,13 @@ export const VincentSitzmann = {
   name: 'Vincent Sitzmann',
   url: 'https://www.vincentsitzmann.com/',
 };
+
+export const CameronSmith = {
+  name: 'Cameron Smith',
+  url: 'https://cameronosmith.github.io/',
+};
+
+export const AyushTewari = {
+  name: 'Ayush Tewari',
+  url: 'https://ayushtewari.com/',
+};

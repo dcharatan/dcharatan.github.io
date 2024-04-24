@@ -8,12 +8,13 @@ const Publication = ({
   authors,
   venue,
   thumbnailSource,
+  numFirstAuthors,
   ...props
 }) => {
   // Generate a comma-separated list of authors.
-  const authorLinks = authors.map(({ name, url: authorUrl }) => (
+  const authorLinks = authors.map(({ name, url: authorUrl }, index) => (
     <a href={authorUrl} className="link-secondary" key={name}>
-      {name}
+      {numFirstAuthors > 1 && index < numFirstAuthors ? `${name}*` : name}
     </a>
   ));
   const authorBlob = [];
@@ -55,8 +56,13 @@ Publication.propTypes = {
       url: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
+  numFirstAuthors: PropTypes.number,
   venue: PropTypes.string.isRequired,
   thumbnailSource: PropTypes.string.isRequired,
+};
+
+Publication.defaultProps = {
+  numFirstAuthors: 1,
 };
 
 export default Publication;
