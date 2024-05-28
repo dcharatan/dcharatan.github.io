@@ -39,7 +39,7 @@ export const PixelSplat = {
   url: 'https://dcharatan.github.io/pixelsplat',
   thumbnailSource: ThumbnailPixelSplat,
   authors: [DavidCharatan, SizheLi, AndreaTagliasacchi, VincentSitzmann],
-  venue: 'CVPR 2024 (Oral)',
+  venue: 'CVPR 2024 (Oral, Award Candidate)',
 };
 
 export const ShapeMOD = {
