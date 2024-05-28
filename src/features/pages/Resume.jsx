@@ -81,6 +81,16 @@ const Resume = () => {
       </ResumeSection>
       <ResumeSection name="TA Positions">
         <WorkExperience
+          company="6.S980: Machine Learning for Inverse Graphics"
+          location="MIT"
+          position="Graduate Teaching Assistant"
+          dates="September 2023–December 2023"
+          bullets={[
+            'Graded homework, held TA hours, etc.',
+            'Redesigned 2 course assignments.',
+          ]}
+        />
+        <WorkExperience
           company="CSCI 2240: Interactive Computer Graphics"
           location="Brown University"
           position="Head Teaching Assistant"
