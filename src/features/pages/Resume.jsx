@@ -32,6 +32,13 @@ const Resume = () => {
       </ResumeSection>
       <ResumeSection name="Work Experience">
         <WorkExperience
+          company="Google DeepMind"
+          location="San Francisco, CA"
+          position="Student Researcher"
+          dates="May 2024–Present"
+          bullets={[]}
+        />
+        <WorkExperience
           company="Common Sense Machines"
           location="Cambridge, MA"
           position="Research Engineer"
