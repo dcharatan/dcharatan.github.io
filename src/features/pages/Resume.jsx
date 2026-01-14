@@ -35,7 +35,7 @@ const Resume = () => {
           company="Google DeepMind"
           location="San Francisco, CA"
           position="Student Researcher"
-          dates="May 2024–Present"
+          dates="May 2024–September 2024"
           bullets={[]}
         />
         <WorkExperience
