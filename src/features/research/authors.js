@@ -18,6 +18,11 @@ export const DanielRitchie = {
   url: 'https://dritchie.github.io/',
 };
 
+export const DanielXu = {
+  name: 'Daniel Xu',
+  url: 'https://www.linkedin.com/in/daniel-xu-633b51166/',
+};
+
 export const DavidCharatan = {
   name: 'David Charatan',
   url: 'http://davidcharatan.com/',
@@ -86,4 +91,14 @@ export const CameronSmith = {
 export const AyushTewari = {
   name: 'Ayush Tewari',
   url: 'https://ayushtewari.com/',
+};
+
+export const RickSzeliski = {
+  name: 'Rick Szeliski',
+  url: 'https://szeliski.org/',
+};
+
+export const GeorgeKopanas = {
+  name: 'George Kopanas',
+  url: 'https://grgkopanas.github.io/',
 };

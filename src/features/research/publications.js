@@ -1,6 +1,7 @@
 import {
   AngelChang,
   DanielRitchie,
+  DanielXu,
   DavidCharatan,
   HanxiaoJiang,
   KennyJones,
@@ -17,11 +18,25 @@ import {
   SizheLi,
   CameronSmith,
   AyushTewari,
+  RickSzeliski,
+  GeorgeKopanas,
 } from './authors';
 import ThumbnailPixelSplat from './thumbnail_pixelsplat.png';
 import ThumbnailShapeMOD from './thumbnail_shapemod.jpeg';
 import ThumbnailArticulations from './thumbnail_articulations.gif';
 import ThumbnailFlowmap from './thumbnail_flowmap.gif';
+import ThumbnailMeshtryoshka from './thumbnail_meshtryoshka.png';
+
+export const Meshtryoshka = {
+  title:
+    'Meshtryoshka: Differentiable Mesh Rendering for Unbounded Scenes',
+  url: 'https://danielxu9393.github.io/meshtryoshka-website/',
+  thumbnailSource: ThumbnailMeshtryoshka,
+  authors: [DavidCharatan, DanielXu, RickSzeliski, GeorgeKopanas, VincentSitzmann],
+  numFirstAuthors: 2,
+  venue: 'arXiv',
+};
+
 
 export const FlowMap = {
   title:
@@ -30,7 +45,7 @@ export const FlowMap = {
   thumbnailSource: ThumbnailFlowmap,
   authors: [CameronSmith, DavidCharatan, AyushTewari, VincentSitzmann],
   numFirstAuthors: 2,
-  venue: 'arXiv',
+  venue: '3DV 2025',
 };
 
 export const PixelSplat = {
@@ -70,4 +85,4 @@ export const Articulations = {
   venue: '3DV 2020',
 };
 
-export default [FlowMap, PixelSplat, ShapeMOD, Articulations];
+export default [Meshtryoshka, FlowMap, PixelSplat, ShapeMOD, Articulations];
