@@ -20,12 +20,36 @@ import {
   AyushTewari,
   RickSzeliski,
   GeorgeKopanas,
+  IshaanChandratreya,
+  BasileVanHoorick,
+  SergeyZakharov,
+  VitorGuizilini,
+  PhillipIsola,
 } from './authors';
 import ThumbnailPixelSplat from './thumbnail_pixelsplat.png';
 import ThumbnailShapeMOD from './thumbnail_shapemod.jpeg';
 import ThumbnailArticulations from './thumbnail_articulations.gif';
 import ThumbnailFlowmap from './thumbnail_flowmap.gif';
 import ThumbnailMeshtryoshka from './thumbnail_meshtryoshka.png';
+import ThumbnailMilliVid from './thumbnail_millivid.png';
+
+export const MilliVid = {
+  title:
+    'MilliVid: Hierarchical Latents for Long-Range Consistency in Video Generation',
+  url: 'https://davidcharatan.com/millivid',
+  thumbnailSource: ThumbnailMilliVid,
+  authors: [
+    IshaanChandratreya,
+    DavidCharatan,
+    BasileVanHoorick,
+    SergeyZakharov,
+    VitorGuizilini,
+    PhillipIsola,
+    VincentSitzmann,
+  ],
+  numFirstAuthors: 2,
+  venue: 'arXiv',
+};
 
 export const Meshtryoshka = {
   title:
@@ -85,4 +109,11 @@ export const Articulations = {
   venue: '3DV 2020',
 };
 
-export default [Meshtryoshka, FlowMap, PixelSplat, ShapeMOD, Articulations];
+export default [
+  MilliVid,
+  Meshtryoshka,
+  FlowMap,
+  PixelSplat,
+  ShapeMOD,
+  Articulations,
+];

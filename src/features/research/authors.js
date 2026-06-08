@@ -102,3 +102,28 @@ export const GeorgeKopanas = {
   name: 'George Kopanas',
   url: 'https://grgkopanas.github.io/',
 };
+
+export const IshaanChandratreya = {
+  name: 'Ishaan Preetam Chandratreya',
+  url: 'https://scholar.google.com/citations?user=ueU-F3cAAAAJ&hl=en',
+};
+
+export const BasileVanHoorick = {
+  name: 'Basile Van Hoorick',
+  url: 'https://basile.be/about-me/',
+};
+
+export const SergeyZakharov = {
+  name: 'Sergey Zakharov',
+  url: 'https://zakharos.github.io/',
+};
+
+export const VitorGuizilini = {
+  name: 'Vitor Guizilini',
+  url: 'https://vitorguizilini.github.io/',
+};
+
+export const PhillipIsola = {
+  name: 'Phillip Isola',
+  url: 'https://web.mit.edu/phillipi/',
+};
