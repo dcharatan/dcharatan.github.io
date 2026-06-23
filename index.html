@@ -1,1 +1,568 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="David Charatan's personal homepage."/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>David Charatan</title><script defer="defer" src="/static/js/main.083b2fc4.js"></script><link href="/static/css/main.726c900b.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="David Charatan — PhD student at MIT EECS." />
+    <link rel="icon" href="favicon.ico" />
+    <title>David Charatan</title>
+    <style>
+      :root {
+        --text: #1a1a1a;
+        --muted: #666;
+        --accent: #007bff;
+        --rule: #e5e5e5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        background: #fff;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Intro */
+      .intro {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .intro img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+
+      .intro p {
+        margin: 0;
+        color: var(--text);
+      }
+
+      .intro p a {
+        color: var(--muted);
+        text-decoration: underline;
+      }
+
+      .intro-sub {
+        margin-top: 6px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .social {
+        margin-top: 12px;
+        font-size: 15px;
+        color: var(--muted);
+      }
+
+      .social a {
+        color: var(--muted);
+      }
+
+      .social span {
+        margin: 0 8px;
+        color: var(--rule);
+      }
+
+      /* Sections */
+      section {
+        margin-top: 56px;
+      }
+
+      h2 {
+        margin: 0 0 20px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      /* Publications */
+      .pub {
+        display: grid;
+        grid-template-columns: 96px 1fr;
+        column-gap: 16px;
+        align-items: start;
+        margin-bottom: 18px;
+      }
+
+      .pub-thumb {
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border: 1px solid var(--rule);
+      }
+
+      /* Animated thumbnails: static frame by default, GIF on hover */
+      .pub-thumb-anim {
+        background-image: var(--thumb-static);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .pub:hover .pub-thumb-anim {
+        background-image: var(--thumb-anim);
+      }
+
+      .pub-body {
+        grid-column: 2;
+      }
+
+      .pub-title {
+        font-weight: 500;
+      }
+
+      .pub-venue-tag {
+        color: var(--muted);
+        font-weight: 700;
+        margin-right: 14px;
+      }
+
+      .pub-authors {
+        color: #888;
+        font-size: 14px;
+        margin-top: 1px;
+      }
+
+      .pub-authors a {
+        color: inherit;
+      }
+
+      .pub-authors strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .pub-venue {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+      }
+
+      .pub-links {
+        margin-top: 1px;
+        font-size: 14px;
+      }
+
+      .pub-links a {
+        color: var(--muted);
+        text-decoration: underline;
+        margin-right: 14px;
+      }
+
+      /* Resume */
+      .job {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+
+      .job-role {
+        font-weight: 500;
+      }
+
+      .job-company {
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .job-note {
+        color: #999;
+        font-size: 14px;
+        margin-top: 2px;
+      }
+
+      .job-dates {
+        color: var(--muted);
+        font-size: 14px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .edu-group {
+        margin-bottom: 24px;
+      }
+
+      .edu-children {
+        margin-top: 12px;
+        margin-left: 12px;
+        border-left: 1px solid var(--rule);
+      }
+
+      .edu-children .job {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 14px;
+      }
+
+      .edu-children .job:last-child {
+        margin-bottom: 0;
+      }
+
+      .edu-children .job::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 14px;
+        height: 1px;
+        background: var(--rule);
+      }
+
+      @media (max-width: 560px) {
+        main {
+          padding: 40px 20px 64px;
+        }
+
+        .intro {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+        }
+
+        .job {
+          flex-direction: column;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="intro">
+        <img src="me.jpg" alt="David Charatan" />
+        <div>
+          <h1>David Charatan</h1>
+          <p>
+            I'm a PhD student at MIT, advised by
+            <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>.
+          </p>
+        
+          <div class="social">
+            <a href="mailto:charatan@mit.edu">charatan@mit.edu</a>
+            <span>·</span>
+            <a href="https://scholar.google.com/citations?user=-n6qYCsAAAAJ&hl=en">Google Scholar</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/davidcharatan/">LinkedIn</a>
+            <span>·</span>
+            <a href="https://github.com/dcharatan">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2>Publications</h2>
+
+        <div class="pub">
+          <img class="pub-thumb" src="thumbnails/millivid.png" alt="MilliVid thumbnail" />
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="https://davidcharatan.com/millivid"
+                >MilliVid: Hierarchical Latents for Long-Range Consistency in
+                Video Generation</a
+              >
+            </div>
+            <div class="pub-authors">
+              <a href="https://scholar.google.com/citations?user=ueU-F3cAAAAJ&hl=en">Ishaan Preetam Chandratreya</a>*,
+              <strong>David Charatan*</strong>,
+              <a href="https://basile.be/about-me/">Basile Van Hoorick</a>,
+              <a href="https://zakharos.github.io/">Sergey Zakharov</a>,
+              <a href="https://vitorguizilini.github.io/">Vitor Guizilini</a>,
+              <a href="https://web.mit.edu/phillipi/">Phillip Isola</a>, and
+              <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">arXiv</span>
+              <a href="https://arxiv.org/abs/2606.09056">arXiv</a>
+              <a href="https://github.com/dcharatan/millivid">GitHub</a>
+              <a href="https://davidcharatan.com/millivid">website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <img class="pub-thumb" src="thumbnails/meshtryoshka.png" alt="Meshtryoshka thumbnail" />
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="https://danielxu9393.github.io/meshtryoshka-website/"
+                >Meshtryoshka: Differentiable Mesh Rendering for Unbounded
+                Scenes</a
+              >
+            </div>
+            <div class="pub-authors">
+              <strong>David Charatan*</strong>,
+              <a href="https://www.linkedin.com/in/daniel-xu-633b51166/">Daniel Xu</a>*,
+              <a href="https://szeliski.org/">Rick Szeliski</a>,
+              <a href="https://grgkopanas.github.io/">George Kopanas</a>, and
+              <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">arXiv</span>
+              <a href="https://danielxu9393.github.io/meshtryoshka-website/">website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div
+            class="pub-thumb pub-thumb-anim"
+            role="img"
+            aria-label="FlowMap thumbnail"
+            style="--thumb-static: url('thumbnails/flowmap_frame.png'); --thumb-anim: url('thumbnails/flowmap.gif');"
+          ></div>
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="http://cameronosmith.github.io/flowmap"
+                >FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via
+                Gradient Descent</a
+              >
+            </div>
+            <div class="pub-authors">
+              <a href="https://cameronosmith.github.io/">Cameron Smith</a>*,
+              <strong>David Charatan*</strong>,
+              <a href="https://ayushtewari.com/">Ayush Tewari</a>, and
+              <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">3DV 2025</span>
+              <a href="https://arxiv.org/abs/2404.15259">arXiv</a>
+              <a href="https://github.com/dcharatan/flowmap">GitHub</a>
+              <a href="http://cameronosmith.github.io/flowmap">website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <img class="pub-thumb" src="thumbnails/pixelsplat.png" alt="pixelSplat thumbnail" />
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="https://dcharatan.github.io/pixelsplat"
+                >pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable
+                Generalizable 3D Reconstruction</a
+              >
+            </div>
+            <div class="pub-authors">
+              <strong>David Charatan</strong>,
+              <a href="https://sizhe-li.github.io/">Sizhe Li</a>,
+              <a href="https://taiya.github.io/">Andrea Tagliasacchi</a>, and
+              <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">CVPR 2024 (Oral, Best Paper Runner-Up)</span>
+              <a href="https://arxiv.org/abs/2312.12337">arXiv</a>
+              <a href="https://github.com/dcharatan/pixelsplat">GitHub</a>
+              <a href="https://dcharatan.github.io/pixelsplat">website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <img class="pub-thumb" src="thumbnails/bpod.png" alt="BPOD thumbnail" />
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="https://arxiv.org/abs/2112.13018"
+                >Benchmarking Pedestrian Odometry: The Brown Pedestrian Odometry
+                Dataset (BPOD)</a
+              >
+            </div>
+            <div class="pub-authors">
+              <strong>David Charatan</strong>,
+              <a href="https://vision2.lems.brown.edu/graduateStudents/hongyi/Hongyi%20Fan.html">Hongyi Fan</a>, and
+              <a href="https://vision.lems.brown.edu/content/benjamin-kimia">Benjamin Kimia</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">3DV 2022</span>
+              <a href="https://arxiv.org/abs/2112.13018">arXiv</a>
+              <a href="https://doi.org/10.26300/c1n7-7p93">dataset</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <img class="pub-thumb" src="thumbnails/shapemod.jpeg" alt="ShapeMOD thumbnail" />
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="https://rkjones4.github.io/shapeMOD.html"
+                >ShapeMOD: Macro Operation Discovery for 3D Shape Programs</a
+              >
+            </div>
+            <div class="pub-authors">
+              <a href="https://rkjones4.github.io/">R. Kenny Jones</a>,
+              <strong>David Charatan</strong>,
+              <a href="https://paulguerrero.net/">Paul Guerrero</a>,
+              <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy J. Mitra</a>, and
+              <a href="https://dritchie.github.io/">Daniel Ritchie</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">SIGGRAPH 2021</span>
+              <a href="https://arxiv.org/abs/2104.06392">arXiv</a>
+              <a href="https://github.com/rkjones4/shapeMOD">GitHub</a>
+              <a href="https://rkjones4.github.io/shapeMOD.html">website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div
+            class="pub-thumb pub-thumb-anim"
+            role="img"
+            aria-label="Motion Annotation Programs thumbnail"
+            style="--thumb-static: url('thumbnails/articulations_frame.png'); --thumb-anim: url('thumbnails/articulations.gif');"
+          ></div>
+          <div class="pub-body">
+            <div class="pub-title">
+              <a href="http://visual.cs.brown.edu/projects/articulations-webpage/"
+                >Motion Annotation Programs: A Scalable Approach to Annotating
+                Kinematic Articulations in Large 3D Shape Collections</a
+              >
+            </div>
+            <div class="pub-authors">
+              <a href="https://www.linkedin.com/in/xianghao-xu-8b1024a6/">Xianghao Xu</a>,
+              <strong>David Charatan</strong>,
+              <a href="https://www.linkedin.com/in/sonia-raychaudhuri/">Sonia Raychaudhuri</a>,
+              <a href="https://jianghanxiao.github.io/">Hanxiao Jiang</a>,
+              <a href="https://www.linkedin.com/in/mae-heitmann-770287118/">Mae Heitmann</a>,
+              <a href="http://www.vovakim.com/">Vladimir Kim</a>,
+              <a href="https://www.cse.iitb.ac.in/~sidch/">Siddhartha Chaudhuri</a>,
+              <a href="http://msavva.github.io/">Manolis Savva</a>,
+              <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>, and
+              <a href="https://dritchie.github.io/">Daniel Ritchie</a>
+            </div>
+            <div class="pub-links">
+              <span class="pub-venue-tag">3DV 2020</span>
+              <a href="http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf">PDF</a>
+              <a href="https://github.com/brownvc/articulations">GitHub</a>
+              <a href="http://visual.cs.brown.edu/projects/articulations-webpage/">website</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Resume</h2>
+
+        <div class="edu-group">
+          <div class="job">
+            <div>
+              <div class="job-role">Ph.D., Computer Science</div>
+              <div class="job-company">
+                Massachusetts Institute of Technology, Cambridge, MA
+              </div>
+            </div>
+            <div class="job-dates">2022 – Present</div>
+          </div>
+          <div class="edu-children">
+            <div class="job">
+              <div>
+                <div class="job-role">Research Intern</div>
+                <div class="job-company">
+                  Toyota Research Institute, Los Altos, CA
+                </div>
+              </div>
+              <div class="job-dates">Summer 2026</div>
+            </div>
+            <div class="job">
+              <div>
+                <div class="job-role">Student Researcher</div>
+                <div class="job-company">
+                  Google DeepMind, San Francisco, CA
+                </div>
+                <div class="job-note">
+                  Worked with Ben Poole, Aleks Holynski, and Ruiqi Gao.
+                </div>
+              </div>
+              <div class="job-dates">Summer 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-group">
+          <div class="job">
+            <div>
+              <div class="job-role">Research Engineer</div>
+              <div class="job-company">
+                Common Sense Machines, Cambridge, MA
+              </div>
+            </div>
+            <div class="job-dates">May 2021 – Aug 2022</div>
+          </div>
+        </div>
+
+        <div class="edu-group">
+          <div class="job">
+            <div>
+              <div class="job-role">Sc.B., Computer Engineering</div>
+              <div class="job-company">
+                Brown University, Providence, RI
+              </div>
+              <div class="job-note">summa cum laude, 4.0 GPA</div>
+            </div>
+            <div class="job-dates">2017 – 2021</div>
+          </div>
+          <div class="edu-children">
+            <div class="job">
+              <div>
+                <div class="job-role">Software Engineering Intern</div>
+                <div class="job-company">Bloomberg L.P., New York, NY</div>
+              </div>
+              <div class="job-dates">Summer 2020</div>
+            </div>
+            <div class="job">
+              <div>
+                <div class="job-role">Software Engineering Intern</div>
+                <div class="job-company">Onshape, Cambridge, MA</div>
+              </div>
+              <div class="job-dates">Summer 2019</div>
+            </div>
+            <div class="job">
+              <div>
+                <div class="job-role">Software Engineering Intern</div>
+                <div class="job-company">USNR, Woodland, WA</div>
+              </div>
+              <div class="job-dates">Summer 2018</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
